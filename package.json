@@ -26,12 +26,14 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
+    "watch": "coffee -o ./lib/ -cw ./src/",
     "test": "mocha test"
   },
   "devDependencies": {
     "chai": ">=1.2.0",
     "mocha": ">=1.3.2",
+    "mongoose": "latest",
     "should": ">=1.1.0"
   },
-  "keywords": []
+  "keywords": ["mongoose", "mongodb", "model", "trash", "delete"]
 }
