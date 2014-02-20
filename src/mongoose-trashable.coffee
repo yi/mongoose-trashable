@@ -26,6 +26,7 @@ module.exports = exports  = (schema, options)->
     return
 
   schema.methods.untrash = (callbak)->
+    return unless @[keyName]? #lazy
     @[keyName] = null
     @save(callbak)
     return
