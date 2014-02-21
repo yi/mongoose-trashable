@@ -15,9 +15,9 @@ npm install mongoose-trashable
 
 ## Usage
 ```javascript
-var mongoose_trashable = require('mongoose-trashable');
+var trashable = require('mongoose-trashable');
 
-TestSchema = new Schema({});
+var TestSchema = new Schema({});
 
 TestSchema.plugin(transable);
 

@@ -37,7 +37,11 @@ describe "mongoose-trashable", ->
 
       doc.untrash (err, doc)->
         should.not.exist doc.trashed_at
-        done()
+        doc.untrash (err, doc)->
+          # continue untrash should work
+          should.not.exist doc.trashed_at
+          done()
+          return
         return
       return
     return
