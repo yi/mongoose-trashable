@@ -26,7 +26,7 @@ module.exports = exports  = (schema, options)->
     return
 
   schema.methods.untrash = (callbak)->
-    @[keyName] = null
+    @set keyName, undefined
     @save(callbak)
     return
 
